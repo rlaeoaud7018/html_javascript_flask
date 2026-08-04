@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CNN</title>
+
+    <link href="./common.css" rel="stylesheet" type="text/css">
+    <link href="./index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <!-- header: 맨 위 큰 배너 이미지 영역 -->
+    <header>
+        <div class="header_wrap">
+            <img src="https://picsum.photos/1400/200">
+        </div>
+    </header>
+
+    <!-- nav: 메뉴 영역. 큰 메뉴(gnb)와 그 아래 작은 실시간 이슈 목록(lnb) 두 줄로 구성 -->
+    <nav>
+        <!-- gnb(Global Navigation Bar): 사이트 최상단 큰 카테고리 메뉴 -->
+        <div class="gnb_wrap">
+            <ul>
+                <li><a href="#none">CNN</a></li>
+                <li><a href="#none">US</a></li>
+                <li><a href="#none">World</a></li>
+                <li><a href="#none">Politics</a></li>
+                <li><a href="#none">Business</a></li>
+                <li><a href="#none">Health</a></li>
+                <li><a href="#none">Entertainment</a></li>
+                <li><a href="#none">Style</a></li>
+                <li><a href="#none">Travel</a></li>
+                <li><a href="#none">Sports</a></li>
+                <li><a href="#none">Video</a></li>
+            </ul>
+        </div>
+        <!-- lnb(Local Navigation Bar): 지금 화제인 이슈 키워드들을 |로 구분해서 한 줄로 나열 -->
+        <div class="lnb_wrap">
+            <a href="#none">Ukraine war</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Turkey elections</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Imran Khan</a>
+            &nbsp;|&nbsp;
+            <a href="#none">US-Mexico border</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Chrishell Stause</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Eurovision</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Dolph Lundgren</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Beyoncé</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Germany shooting</a>
+            &nbsp;|&nbsp;
+            <a href="#none">Restaurant in space</a>
+        </div>
+    </nav>
+
+    <!-- section: 실제 뉴스 기사들이 들어가는 본문. 왼쪽/가운데/오른쪽 3개의 큰 기둥(li)으로 나뉘어요. -->
+    <section>
+        <div class="section_wrap">
+            <ul>
+                <!-- 왼쪽 기둥: 헤드라인 기사 하나 (큰 제목 + 사진 + 요약 + 관련기사 목록) -->
+                <li class="article_left">
+                    <div>
+                        <a href="#none">South Arfrica accused of arming Russia</a>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/680/380">
+                    </div>
+                    <div>
+                        <a href="#none">Government loaded arms and ammunition onto a sanctioned Russian ship late last year, US ambassador tells local media</a>
+                    </div>
+                    <!-- 관련 기사 링크 목록. common.css에서는 li가 float:left(가로배치)인데,
+                         index.css에서 이 목록의 li만 float:none으로 다시 세로 배치로 바꿔놨어요. -->
+                    <div>
+                        <ul>
+                            <li><a href="#none">ㆍLive Updates: ‘Effective counterattacks’ underway in Bakhmut, Ukraine says</a></li>
+                            <li><a href="#none">ㆍRetired colonel on how new weapon could be a game changer for Ukraine</a></li>
+                            <li><a href="#none">ㆍAnalysis: Wagner boss steps up his online tantrum. What does it mean?</a></li>
+                            <li><a href="#none">ㆍVideo shows latest footage on the ground in fiercely contested Ukrainian town</a></li>
+                            <li><a href="#none">ㆍCNN Exclusive: Biden administration hunts for high-value Russians for potential prisoner swap</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 가운데 기둥: [사진+제목] 짝이 3번 반복되는 작은 기사 3개 -->
+                <li class="article_center">
+                    <div>
+                        <img src="https://picsum.photos/328/185">
+                    </div>
+                    <div>
+                        <a href="#nonr">‘I don’t intend to support him’: GOP senators push back on Trump’s town hall claims</a>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/328/187">
+                    </div>
+                    <div>
+                        <a href="#nonr">Arrest of former Pakistan PM Imran Khan was illegal, supreme court rules</a>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/328/190">
+                    </div>
+                    <div>
+                        <a href="#nonr">Elon Musk says he’s found a new CEO for Twitter</a>
+                    </div>
+                </li>
+                <!-- 오른쪽 기둥: 기사 하나(사진+제목) + 관련 기사 링크 목록(마우스 올리면 배경색 바뀜) -->
+                <li class="article_right">
+                    <div>
+                        <img src="https://picsum.photos/332/185">
+                    </div>
+                    <div>
+                        <a href="#none">Thailand’s young voters spearhead ‘earth-shaking’ calls for change in military dominated kingdom</a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#none">ㆍLive Updates: ‘Effective counterattacks’ underway in Bakhmut, Ukraine says</a>
+                            </li>
+                            <li>
+                                <a href="#none">ㆍRetired colonel on how new weapon could be a game changer for Ukraine</a>
+                            </li>
+                            <li>
+                                <a href="#none">ㆍAnalysis: Wagner boss steps up his online tantrum. What does it mean?</a>
+                            </li>
+                            <li>
+                                <a href="#none">ㆍVideo shows latest footage on the ground in fiercely contested Ukrainian town</a>
+                            </li>
+                            <li>
+                                <a href="#none">ㆍCNN Exclusive: Biden administration hunts for high-value Russians for potential prisoner swap</a>
+                            </li>
+                            <li>
+                                <a href="#none">ㆍLive Updates: ‘Effective counterattacks’ underway in Bakhmut, Ukraine says</a>
+                            </li>
+                            <li>
+                                <a href="#none">ㆍRetired colonel on how new weapon could be a game changer for Ukraine</a>
+                            </li>
+                            <li>
+                                <a href="#none">ㆍAnalysis: Wagner boss steps up his online tantrum. What does it mean?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>

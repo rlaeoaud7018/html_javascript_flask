@@ -1,0 +1,30 @@
+/* 모든 태그 기본 여백 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 페이지 전체 배경색(연한 파란색) */
+body {
+    background-color: #98b9ed;
+}
+
+/* 링크 밑줄 제거 + 기본 글자색 */
+a{
+    text-decoration: none;
+    color: #242424;
+}
+/* 마우스를 올렸을 때만 밑줄 표시 */
+a:hover{
+    text-decoration: underline;
+}
+/* float된 li 때문에 ul 높이가 0이 되는 걸 방지 */
+ul{
+    overflow: hidden;
+}
+/* li 점 기호 제거 + 기본적으로 옆으로 배치 */
+li{
+    list-style: none;
+    float: left;
+
+}

@@ -1,0 +1,63 @@
+#wrap {
+    width: 600px;
+    margin: 40px auto;
+}
+
+#wrap div.floor_list {
+    background-color: #fff;
+    padding: 30px 40px;
+}
+
+#wrap div.floor_wrap div.title {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #dadada;
+}
+
+#wrap div.floor_wrap div.title h3 {
+    font-weight: normal;
+}
+
+#wrap div.floor_wrap div.title h3 strong {
+    font-weight: bold;
+}
+
+#wrap div.floor_wrap div.floor_number ul.floor_list {
+    border-bottom: 1px solid #eee;
+}
+
+#wrap div.floor_wrap div.floor_number ul.floor_list:hover {
+    background-color: #f4f4f4;
+}
+
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor span.num {
+    width: 60px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#wrap div.floor_wrap div.floor_number ul.floor_list:last-child li.floor span.num {
+    width: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor div.info p.kor {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor div.info p.eng {
+    font-size: 12px;
+    color: #999;
+}

@@ -1,0 +1,81 @@
+/* 전체 너비 640px, 가운데 정렬 */
+#wrap {
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+/* 광고 카드: 흰 배경 + 둥근 모서리 + 안쪽여백, 가운데 정렬 */
+#wrap div.ad_wrap {
+    width: 600px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+
+
+}
+
+/* 제목: 가운데 정렬 */
+#wrap div.ad_wrap div.title {
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+/* 메인 이미지 영역: 높이를 고정해두고, 이미지가 그보다 크면 넘치는 부분은 잘라서 숨김(overflow: hidden) */
+#wrap div.ad_wrap div.main_goods {
+    height: 300px;
+    overflow: hidden;
+}
+
+/* 메인 이미지 너비 고정 */
+#wrap div.ad_wrap div.main_goods a img {
+    min-width: 600px;
+    max-width: 600px;
+}
+
+#wrap div.ad_wrap div.sub_goods {
+    margin: 20px 0;
+
+}
+
+/* 연관상품 작은 사진: 오른쪽 여백. 클래스가 li 자기 자신에 붙어 있어서 li.img처럼 공백 없이 써야 정상 적용돼요. */
+#wrap div.ad_wrap div.sub_goods ul li.img {
+    margin-right: 10px;
+}
+
+/* 연관상품 작은 사진 크기 고정 */
+#wrap div.ad_wrap div.sub_goods ul li.img > a > img {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+
+
+/* 연관상품 이름/가격 글자 크기 */
+#wrap div.ad_wrap div.sub_goods ul li.info > a > p {
+    font-size: 1.1em;
+
+}
+
+/* 그 중 첫 번째 문단(상품명)만 굵게 */
+#wrap div.ad_wrap div.sub_goods ul li.info > a > p:first-child {
+    font-weight: bold;
+}
+
+/* 더보기/공유하기 버튼: 박스 모양 + 가운데 정렬 */
+#wrap div.ad_wrap div.more_share a {
+    display: inline-block;
+    width: 297px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 마우스를 올려도 밑줄 안 생기게 */
+#wrap div.ad_wrap div.more_share a:hover {
+    text-decoration: none;
+}

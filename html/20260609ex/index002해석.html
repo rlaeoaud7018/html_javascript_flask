@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX002</title>
+</head>
+<body>
+
+    <!-- 표(table) 관련 -->
+    <!--
+    아래는 표를 만드는 가장 기본적인 형태의 예시라서 비교용으로 주석 처리(비활성화)해뒀어요.
+    thead(제목줄) + tbody(내용줄) 구조로, tr은 한 행(가로줄), th/td는 한 칸(셀)이에요.
+    <table border="1">
+        <thead>
+            <tr>
+                <th>1열</th>
+                <th>2열</th>
+                <th>3열</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1행1열</td>
+                <td>1행2열</td>
+                <td>1행3열</td>
+            </tr>
+            <tr>
+                <td>2행1열</td>
+                <td>2행2열</td>
+                <td>2행3열</td>
+            </tr>
+            <tr>
+                <td>3행1열</td>
+                <td>3행2열</td>
+                <td>3행3열</td>
+            </tr>
+        </tbody>
+    </table>
+    -->
+
+    <!--
+        실제로 쓰인 성적표. rowspan="2"는 그 칸을 세로로 2칸만큼 합치고,
+        colspan="2"는 그 칸을 가로로 2칸만큼 합쳐요.
+        예) "과목/학기" 칸은 위아래 2줄을 세로로 합친 것, "국어" 칸은 옆으로 2칸(1학기/2학기)을 가로로 합친 것.
+    -->
+    <table border="1">
+        <tr>
+            <td rowspan="2">과목/학기</td>
+            <td colspan="2">국어</td>
+            <td colspan="2">수학</td>
+            <td colspan="2">영어</td>
+        </tr>
+        <tr>
+            <td>1학기</td>
+            <td>2학기</td>
+            <td>1학기</td>
+            <td>2학기</td>
+            <td>1학기</td>
+            <td>2학기</td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>85</td>
+            <td>90</td>
+            <td>100</td>
+            <td>50</td>
+            <td>20</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>박찬호</td>
+            <td>85</td>
+            <td>75</td>
+            <td>100</td>
+            <td>90</td>
+            <td>85</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>박세리</td>
+            <td>75</td>
+            <td>55</td>
+            <td>60</td>
+            <td>60</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <!--
+        아래 style + table은 외부 표 생성기 사이트에서 뼈대만 복사해온 연습용 예시라서
+        칸 안에 실제 내용은 비어 있어요. rowspan/colspan을 다른 모양으로도 연습해보려고 남겨둔 것 같아요.
+    -->
+    <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky" rowspan="2"></th>
+    <th class="tg-0pky"></th>
+  </tr>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2"></td>
+  </tr>
+</tbody>
+</table>
+
+</body>
+</html>

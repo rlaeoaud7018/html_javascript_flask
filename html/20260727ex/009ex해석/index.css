@@ -1,0 +1,126 @@
+/* 맨 위 배너 영역: 검은 배경 */
+header {
+    background-color: #000;
+}
+
+/* 배너 이미지 너비 고정 + 가운데 정렬 */
+header div.header_wrap {
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* 메뉴 영역도 검은 배경 */
+nav {
+    background-color: #000;
+}
+
+/* 큰 메뉴(gnb) 줄 높이 = line-height로 세로 가운데 정렬 */
+nav div.gnb_wrap {
+    width: 1400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+nav div.gnb_wrap ul li {
+    padding: 0 20px;
+}
+
+/* 메뉴 글자는 흰색(검은 배경 위라서) */
+nav div.gnb_wrap ul li a {
+    color: #fff;
+    font-size: .9em;
+}
+
+/* 작은 이슈 메뉴(lnb): 흰 배경 + 가운데 정렬 */
+nav div.lnb_wrap {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* 본문 전체 너비 고정 + 가운데 정렬 */
+section div.section_wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* 왼쪽 기둥(헤드라인 기사) 너비 */
+section div.section_wrap li.article_left {
+    width: 680px;
+}
+
+/* 1번째 div = 큰 제목: 가운데 정렬 + 아주 큰 글씨 */
+section div.section_wrap li.article_left div:nth-child(1) {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* 2번째 div = 사진: 위아래 여백 */
+section div.section_wrap li.article_left div:nth-child(2) {
+    margin: 15px 0;
+}
+
+/* 3번째 div = 요약 링크: 크고 굵게 */
+section div.section_wrap li.article_left div:nth-child(3) a {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* 4번째 div = 관련기사 목록 감싸는 영역 */
+section div.section_wrap li.article_left div:nth-child(4) {
+    margin: 15px 0;
+}
+
+/* 관련기사 목록 안의 li는 float:none으로 다시 세로 배치(common.css의 float:left를 여기서 덮어씀) */
+section div.section_wrap li.article_left div:nth-child(4) li {
+    float: none;
+    padding-top: 7px;
+}
+
+/* 가운데 기둥 너비 + 좌우 여백으로 왼쪽/오른쪽 기둥과 간격 확보 */
+section div.section_wrap li.article_center {
+    width: 328px;
+    margin: 0 30px;
+}
+
+/* 가운데 기둥의 2,4,6번째 div(=제목들)만 크고 굵게, 아래 여백 */
+section div.section_wrap li.article_center div:nth-child(2),
+section div.section_wrap li.article_center div:nth-child(4),
+section div.section_wrap li.article_center div:nth-child(6) {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* 오른쪽 기둥 너비 */
+section div.section_wrap li.article_right {
+    width: 332px;
+}
+
+/* 오른쪽 기둥 제목(2번째 div) 크고 굵게 */
+section div.section_wrap li.article_right div:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* 오른쪽 기둥 관련기사 목록: 세로 배치 + 아래쪽 점선 구분선 */
+section div.section_wrap li.article_right div:nth-child(3) li {
+    float: none;
+    padding-top: 15px;
+    border-bottom: 1px dashed #dadada;
+}
+
+/* 링크에 마우스 올려도 밑줄은 안 생기게 */
+section div.section_wrap li.article_right div:nth-child(3) li a:hover {
+    text-decoration: none;
+}
+
+/* 대신 그 줄 전체에 옅은 회색 배경으로 강조 */
+section div.section_wrap li.article_right div:nth-child(3) li:hover {
+    background-color: rgba(200, 200, 200, .2);
+}

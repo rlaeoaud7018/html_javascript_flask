@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COUPONE</title>
+
+    <link href="./common.css" rel="stylesheet" type="text/css">
+    <link href="./index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <div id="wrap">
+
+        <!-- 맨 위 작은 안내 문구 -->
+        <div class="special">
+            SPECIAL WELCOME COUPON
+        </div>
+
+        <!-- 큰 제목 -->
+        <div class="title">
+            오늘의집 첫구매 고객님께만 드려요!
+        </div>
+
+        <!-- 실제 쿠폰처럼 보이는 흰색 카드 영역 -->
+        <div class="disign">
+            <ul>
+                <!-- 왼쪽: 할인율 + 설명 -->
+                <li class="sale">
+                    <div>
+                        <span>15</span>%
+                    </div>
+                    <div>
+                        최대 20,000원까지 할인 가능
+                    </div>
+                </li>
+                <!-- 가운데: 실제 쿠폰처럼 세로 구분선(점선 느낌)을 표현하는 얇은 칸. 내용은 없고 공백문자(&nbsp;)만 넣어서 자리를 채워요. -->
+                <li class="gap">
+                    &nbsp;
+                </li>
+                <!-- 오른쪽: 상품 이미지 -->
+                <li class="img">
+                    <img src="./imgs/20230510_215817.jpg">
+                </li>
+            </ul>
+
+            <!--
+                진짜 쿠폰처럼 양옆에 동그랗게 파인 구멍 모양을 흉내낸 요소예요.
+                내용은 비어있고, CSS로 동그란 배경색 원을 카드 테두리에 걸쳐서 배치해요.
+            -->
+            <div class="hole_left"></div>
+            <div class="hole_right"></div>
+
+        </div>
+
+        <!-- 쿠폰 사용 조건 안내 -->
+        <div class="txt">
+            대상. 오늘의집 구매이력이 없다면 누구나!
+            <br>
+            쿠폰 유효기간. 발급일 포함 3일
+            <br>
+            쿠폰혜택. ID당1회 사용가능
+        </div>
+
+    </div>
+
+</body>
+</html>

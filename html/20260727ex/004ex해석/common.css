@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* float된 li 때문에 ul 높이가 0이 되는 걸 방지 */
+ul {
+    overflow: hidden;
+}
+
+/* li 점 기호 제거 + 기본적으로 옆으로 배치 */
+li {
+    list-style: none;
+    float: left;
+}

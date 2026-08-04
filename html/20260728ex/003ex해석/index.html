@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KAKAO AD</title>
+
+    <link rel="stylesheet" href="./common.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+
+</head>
+<body>
+
+    <div id="wrap">
+
+        <!-- 광고 카드 전체를 감싸는 흰색 박스 -->
+        <div class="ad_wrap">
+
+            <!-- 상품 제목 -->
+            <div class="title">
+                <h3>작지만 강해~ 후회없는 선택 미니건조기</h3>
+            </div>
+
+            <!-- 메인(대표) 상품 이미지 -->
+            <div class="main_goods">
+                <!-- 원본(오타): href 속성 따옴표 뒤에 물음표(?)가 잘못 붙어 있었어요.
+                <a href="#none"?><img src="./imgs/img01.jpg"></a>
+                -->
+                <!-- 수정본: 물음표를 지워서 정상적인 a 태그로 고쳤어요. -->
+                <a href="#none"><img src="./imgs/img01.jpg"></a>
+            </div>
+
+            <!--
+                아래에 딸린(연관) 상품 3개가 반복돼요. ul 하나가 상품 하나이고,
+                li.img(작은 사진) + li.info(상품명, 가격)로 구성돼요. 전부 같은 더미 데이터라
+                첫 번째 상품에만 설명을 남길게요.
+
+                참고: 원본에는 <a href="#none"?>처럼 따옴표 뒤에 물음표(?)가 붙은 오타가
+                아래 7군데(메인 이미지 1개 + 연관상품 3개 x 각 2개)에 전부 있었는데,
+                전부 같은 실수라서 여기서는 매번 원본/수정본을 반복하지 않고
+                실제 코드에서 물음표만 지워서 정상적인 <a href="#none">로 고쳐뒀어요.
+            -->
+            <div class="sub_goods">
+                <ul>
+                    <li class="img">
+                        <a href="#none"><img src="./imgs/img02.jpg"></a>
+                    </li>
+                    <li class="info">
+                        <a href="#none">
+                            <p>당일생산 국산 포기김치</p>
+                            <p>3kg/9,900원</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="img">
+                        <a href="#none"><img src="./imgs/img02.jpg"></a>
+                    </li>
+                    <li class="info">
+                        <a href="#none">
+                            <p>당일생산 국산 포기김치</p>
+                            <p>3kg/9,900원</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="img">
+                        <a href="#none"><img src="./imgs/img02.jpg"></a>
+                    </li>
+                    <li class="info">
+                        <a href="#none">
+                            <p>당일생산 국산 포기김치</p>
+                            <p>3kg/9,900원</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 더보기 / 공유하기 버튼 -->
+            <div class="more_share">
+                <a href="#none">핫특딜 더보기</a>
+                <a href="#none">공유하기</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

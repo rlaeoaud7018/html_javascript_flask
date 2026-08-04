@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./common.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+</head>
+<body>
+
+    <div id="wrap">
+
+        <div class="floor_wrap">
+
+            <!-- 제목: "FLOOR GUIDE"만 <strong>으로 감싸서 그 부분만 굵게 표시해요. -->
+            <div class="title">
+                <h3>LOTTE DEPARTMENT STORE <strong>FLOOR GUIDE</strong></h3>
+            </div>
+            <!--
+                층 안내 목록. 한 층 = ul.floor_list 하나, 그 안의 li.floor 하나가 실제 내용이에요.
+                li.floor 안에는 [층 숫자(span.num)] + [한글/영문 설명(div.info)]가 가로로 나란히 있어요.
+                10개 층이 반복되는 구조라 첫 번째(7층)에만 자세히 설명을 달아둘게요.
+            -->
+            <div class="floor_number">
+                <ul class="floor_list">
+                    <li class="floor">
+                        <!-- 층 숫자 -->
+                        <span class="num">7</span>
+                        <!-- 한글 설명(kor) + 영문 설명(eng) -->
+                        <div class="info">
+                            <p class="kor">식당가|사은품증정|롯데카드센터|문화센터</p>
+                            <p class="eng">RESTAUANT|COMPLIMENTARY GIFT CENTER|LOTTER CARD|LIFESTYLE LAB</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">6</span>
+                        <div class="info">
+                            <p class="kor">가전|가구|주방·식기|문화센터</p>
+                            <p class="eng">HOME APPLIANCES|FUNITURE|KICHENWARE·TABLEWARE|LIFESTYLE LAB</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">5</span>
+                        <div class="info">
+                            <p class="kor">아웃도어|스포츠|유니섹스캐쥬얼</p>
+                            <p class="eng">OUTDOOR|SPORTS|UNISEX CASUAL</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">4</span>
+                        <div class="info">
+                            <p class="kor">남성패션|골프</p>
+                            <p class="eng">MEN'S FASHION|GOLF</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">3</span>
+                        <div class="info">
+                            <p class="kor">여성패션|슈즈|란제리</p>
+                            <p class="eng">WOMEN'S FASHION|SHOES|LINGERIE</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">2</span>
+                        <div class="info">
+                            <p class="kor">영 캐주얼|영캐릭터 </p>
+                            <p class="eng"></p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">1</span>
+                        <div class="info">
+                            <p class="kor">화장품|핸드백|패션잡화</p>
+                            <p class="eng">COSMETICS|HANDBAGS|FASHION ACCESSORIES</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">B1</span>
+                        <div class="info">
+                            <!--
+                                원본(오타): p.eng를 닫은 뒤에 짝이 없는 </p>가 하나 더 있었어요.
+                                <p class="kor">아동·유아|키즈카페|유니섹스캐쥬얼</p>
+                                <p class="eng">KID'S·BABY|KIDS CAFE|UNISEX CASUAL</p>
+
+                                </p>
+                            -->
+                            <!-- 수정본: 짝이 없는 </p>를 삭제했어요. p.kor, p.eng 각각 여는 태그와 닫는 태그가 1:1로 맞아요. -->
+                            <p class="kor">아동·유아|키즈카페|유니섹스캐쥬얼</p>
+                            <p class="eng">KID'S·BABY|KIDS CAFE|UNISEX CASUAL</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">B2</span>
+                        <div class="info">
+                            <p class="kor">푸드에비뉴</p>
+                            <p class="eng">FOOD AVENUE</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 마지막 줄만 숫자 대신 "B3-B7"처럼 글자 수가 많아서, <br>로 강제로 두 줄("B3-" / "B7")로 나눴어요. -->
+                <ul class="floor_list">
+                    <li class="floor">
+                        <span class="num">B3-<br>B7</span>
+                        <div class="info">
+                            <p class="kor">주차장</p>
+                            <p class="eng">PARKING LOT</p>
+                        </div>
+                    </li>
+                </ul>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>

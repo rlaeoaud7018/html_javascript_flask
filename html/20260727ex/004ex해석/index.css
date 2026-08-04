@@ -1,0 +1,51 @@
+/* 전체 너비 1250px, 화면 가운데 정렬 */
+#wrap {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+/* 로고 글자 크게 + 가운데 정렬 + 굵게 */
+#wrap div.logo {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* 메뉴 영역 위아래 구분선 */
+#wrap div.menu {
+    padding: 20px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+/* 메뉴 항목마다 너비 지정 + 가운데 정렬 (common.css에서 li는 이미 float:left라서 옆으로 나열됨) */
+#wrap div.menu li {
+    width: 250px;
+    text-align: center;
+}
+
+/* 배너/상품 이미지 영역 위아래 여백 */
+#wrap div.main_banner {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#wrap div.main_goods {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*
+    고정 배경 이미지 영역.
+    background-attachment: fixed → 스크롤해도 이 배경 이미지는 그 자리에 고정.
+    background-size: cover → 영역 크기에 맞춰 이미지가 잘리더라도 꽉 차게 채움.
+    background-repeat: no-repeat → 이미지가 반복되지 않게.
+*/
+#wrap div.bg_fixed {
+    height: 500px;
+    background-image: url(./imgs/1015-1250x1000.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

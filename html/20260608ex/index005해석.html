@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMAGE</title>
+</head>
+<body>
+    <!--
+        이미지 태그는 시각적 효과를 나타내고자 할때 사용합니다.
+        <img> 나홀로 태그
+    -->
+    <h1>this is apple</h1>
+    <p>사과는 맛있어! 그래서 누구나 좋아해~ 남녀노소 좋아해~</p>
+    <!--
+        img 속성 설명
+        src: 보여줄 이미지 파일의 경로
+        height: 이미지 세로 크기(px). 세로만 정하면 가로는 원본 비율대로 자동으로 맞춰져요.
+        alt: 이미지가 안 뜰 때(또는 화면낭독기용) 대신 보여줄 설명 글자
+        title: 마우스를 올렸을 때 뜨는 말풍선 설명
+        loading="lazy": 화면에 보이기 직전까지 이미지를 안 불러와서 페이지를 더 빨리 뜨게 해줘요.
+    -->
+    <img    src="./res/img/apple.jpg"
+            height="500"
+            alt="this image is apple."
+            title="apple"
+            loading="lazy">
+
+    <br>
+
+    <!-- 영상: controls는 재생바를 보여주고, autoplay는 페이지가 열리자마자 자동 재생해요. -->
+    <video width="500" controls autoplay>
+        <source src="./res/mov/apple.mp4" type="video/mp4">
+    </video>
+
+    <br>
+
+    <!-- 위에 있던 이미지랑 같은 사진을 한 번 더 넣어서 연습해본 예시예요. -->
+    <img    src="./res/img/apple.jpg"
+            height="500"
+            alt="this image is apple."
+            title="apple"
+            loading="lazy">
+
+    <!-- iframe: 지금 이 페이지 안에 "다른 웹페이지(여기서는 유튜브 영상)"를 통째로 끼워 넣는 태그예요. -->
+    <iframe
+            width="560" height="315"
+            src="https://www.youtube.com/embed/gdZLi9oWNZg?si=JczUIenw1cTfKTTf"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media; gyroscope;
+            picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+    </iframe>
+
+</body>
+</html>

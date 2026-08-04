@@ -1,0 +1,46 @@
+/* 전체 너비 1000px, 가운데 정렬 */
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*
+    display: flex → 자식 요소(div.item)들을 가로로 나란히 배치.
+    justify-content: center → 가로 방향으로 가운데 정렬.
+    아래 주석 처리된 두 줄은 다른 정렬 방식을 적어둔 메모예요.
+*/
+#wrap div.gnb {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */  /*  space-between: 양쪽 끝에 붙이고 나머지 공간을 균등하게 배치 */
+    /* justify-content: space-around; */  /*  space-around: 양쪽 끝에 붙이지 않고 나머지 공간을 균등하게 배치 */
+    margin-top: 20px;
+}
+
+/*
+    메뉴 항목 하나의 크기와 여백.
+    box-sizing: border-box → padding/border를 포함해서 전체 크기가 width/height를 넘지 않게 계산.
+*/
+#wrap div.gnb > div.item {
+    width: 130px; height: 40px;
+    padding: 10px;
+    margin: 0 20px;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* 마우스를 올린 메뉴 항목만 밑줄(테두리)이 두껍고 진한 색으로 바뀌어요. */
+#wrap div.gnb > div.item:hover {
+    border-bottom: 3px solid #ab5757;
+
+}
+
+#wrap div.gnb > div.item:hover {
+    text-decoration: none;
+}
+
+/* 슬라이드 이미지 영역 위아래 여백 + 가운데 정렬 */
+#wrap div.main_slide {
+    margin: 20px auto;
+}

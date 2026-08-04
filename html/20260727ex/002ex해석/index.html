@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAIL</title>
+
+    <link href="./common.css" rel="stylesheet" type="text/css">
+    <link href="./index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <div id="wrap">
+        <!-- 메일함 위쪽 툴바: 체크박스 하나 + 읽음/삭제 같은 기능 버튼(지금은 진짜 기능 없이 모양만) -->
+        <div class="menu_wrap">
+            <input type="checkbox">
+            <a href="#none">읽음</a>
+            <a href="#none">삭제</a>
+            <a href="#none">스팸차단</a>
+            <a href="#none">답장</a>
+            <a href="#none">전체답장</a>
+            <a href="#none">전달</a>
+            <a href="#none">이동</a>
+            <a href="#none">더보기</a>
+            <a href="#none">필터</a>
+            <a href="#none">5/60 안읽음</a>
+            <a href="#none">삭제</a>
+        </div>
+        <!--
+            메일 목록: table(표)로 만들었어요. 한 줄(tr)이 메일 한 통이고,
+            각 칸(td)은 순서대로 [체크박스] [보낸사람로고] [작은아이콘] [보낸사람이름] [메일제목+첨부아이콘] [받은시간] 이에요.
+            아래 tr이 14번 반복되는데, 전부 같은 구조(더미 데이터)라서 처음 한 줄에만 설명을 달아둘게요.
+        -->
+        <div class="list_wrap">
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <img src="./imgs/01.png">
+                    </td>
+                    <td>
+                        <img src="./imgs/02.png">
+                    </td>
+                    <td>
+                        <a href="#none">EMPORIO ARMANI</a>
+                    </td>
+                    <td>
+                        <a href="#none">3D and Virtual Try On: live a new shopping experience</a> <a href="#none"><img src="./imgs/03.png"></a> <a href="#none"><img src="./imgs/04.png"></a>
+                    </td>
+                    <td>
+                        <a href="#none">02.15 15:20</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- 페이지 이동(이전/다음) 버튼 자리 -->
+        <div class="page">
+            <a href="#none"><img src="./imgs/06.png"></a>
+            <a href="#none"><img src="./imgs/05.png"></a>
+        </div>
+    </div>
+
+</body>
+</html>

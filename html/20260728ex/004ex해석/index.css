@@ -1,0 +1,84 @@
+/* 전체 너비 600px, 위아래 여백 + 가운데 정렬 */
+#wrap {
+    width: 600px;
+    margin: 40px auto;
+}
+
+/*
+    원본(오타): div.floor_list라는 클래스는 HTML 어디에도 없어서(ul.floor_list만 있음),
+    이 규칙은 지금 아무 곳에도 적용되지 않고 있어요.
+#wrap div.floor_list {
+    background-color: #fff;
+    padding: 30px 40px;
+}
+*/
+
+/* 수정본: 흰색 카드 역할을 하는 실제 요소는 div.floor_wrap이라서, 선택자를 그걸 가리키도록 바꿨어요. */
+#wrap div.floor_wrap {
+    background-color: #fff;
+    padding: 30px 40px;
+}
+
+/* 제목 영역: 가운데 정렬 + 아래쪽 점선 구분선 */
+#wrap div.floor_wrap div.title {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #dadada;
+}
+
+/* h3 전체는 일단 보통 굵기로 */
+#wrap div.floor_wrap div.title h3 {
+    font-weight: normal;
+}
+
+/* 그 중 strong 태그(FLOOR GUIDE)만 다시 굵게 */
+#wrap div.floor_wrap div.title h3 strong {
+    font-weight: bold;
+}
+
+/* 각 층(ul.floor_list) 아래에 얇은 구분선 */
+#wrap div.floor_wrap div.floor_number ul.floor_list {
+    border-bottom: 1px solid #eee;
+}
+
+/* 마우스를 올린 층만 옅은 회색 배경으로 강조 */
+#wrap div.floor_wrap div.floor_number ul.floor_list:hover {
+    background-color: #f4f4f4;
+}
+
+/* 한 층(li.floor) 안에서 숫자와 설명을 가로로 나란히, 세로 가운데 정렬 */
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+
+/* 층 숫자: 너비 고정 + 크고 굵은 글씨 + 가운데 정렬 */
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor span.num {
+    width: 60px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 맨 마지막 층(B3-B7)만 글씨 크기를 더 작게(26px → 18px) */
+#wrap div.floor_wrap div.floor_number ul.floor_list:last-child li.floor span.num {
+    width: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 한글 설명: 굵게 + 아래쪽 여백 */
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor div.info p.kor {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* 영문 설명: 작은 글씨 + 회색 */
+#wrap div.floor_wrap div.floor_number ul.floor_list li.floor div.info p.eng {
+    font-size: 12px;
+    color: #999;
+}

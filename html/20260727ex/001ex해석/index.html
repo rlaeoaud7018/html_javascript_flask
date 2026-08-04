@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LETTER</title>
+
+    <!-- common.css: 사이트 어디서나 쓰는 기본 초기화 스타일 / index.css: 이 페이지만의 스타일 -->
+    <link href="./common.css" rel="stylesheet" type="text/css">
+    <link href="./index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <!-- 전체를 감싸는 큰 상자. 여기 안에 왼쪽 메뉴 + 오른쪽 편지, 이렇게 두 칸이 들어가요. -->
+    <div id="wrap">
+
+        <!-- 이 ul(가로 두 칸짜리 큰 목록)의 li가 각각 "왼쪽 목록"과 "오른쪽 편지"예요. -->
+        <ul>
+            <!-- 왼쪽: 자주 쓰는 문장 링크 모음 -->
+            <li class="list">
+
+                <ul>
+                    <li><a href="#none">How are you doing?</a></li>
+                    <li><a href="#none">Hi~</a></li>
+                    <li><a href="#none">Hello!</a></li>
+                    <li><a href="#none">Thank you.</a></li>
+                    <li><a href="#none">Come to eat.</a></li>
+                    <li><a href="#none">Congratulations graduation</a></li>
+                </ul>
+
+            </li>
+            <!-- 오른쪽: 편지 카드 한 장 -->
+            <li class="letter">
+
+                <div class="letter_wrap">
+
+                    <!-- 받는 사람 -->
+                    <div class="to">
+                        <a href="#none">
+                            <h2>To. Hong Gildong</h2>
+                        </a>
+                    </div>
+
+                    <!-- 편지 제목(인사말) -->
+                    <div class="head">
+                        <h3>How are you doing?</h3>
+                    </div>
+
+                    <!-- 편지 본문. Lorem ipsum은 실제 내용 대신 자리만 채워둔 더미(가짜) 텍스트예요. -->
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet porro eius est architecto quia facere, tenetur quo fugiat officia, velit, aut suscipit doloremque iure quasi itaque quidem explicabo voluptas nostrum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quae facilis ipsa vel molestias eum dolorum a quia sit. Nulla animi laudantium quod fuga, vel veritatis a voluptates nam quo.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam libero praesentium expedita, laboriosam error enim iusto natus atque amet repudiandae eligendi reprehenderit. Dolorem voluptate dolor quaerat commodi. Possimus, exercitationem?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illo est libero laboriosam, quo harum. Omnis vitae quam quo ea deserunt, reiciendis neque libero sapiente vero, accusamus, cupiditate molestias iure?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eaque quam quidem soluta necessitatibus id nemo ullam. Quibusdam nisi voluptatem debitis fugit, deleniti non dolorum pariatur veniam sunt temporibus quaerat!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique iste at quis eos exercitationem earum commodi suscipit inventore corrupti voluptate impedit vero, qui enim eligendi rem consequatur. Quasi, ipsam quod?</p>
+                    </div>
+
+                    <!-- 보낸 사람 -->
+                    <div class="from">
+                        <a href="#none">
+                            <h2>From. Park Chanho</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

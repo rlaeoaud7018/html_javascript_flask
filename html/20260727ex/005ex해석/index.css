@@ -1,0 +1,35 @@
+/* 전체 너비 800px, 가운데 정렬 */
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* 카드(ul) 하나마다 아래쪽 여백을 줘서 다음 카드와 간격을 벌림 */
+#wrap > ul {
+    margin-bottom: 15px;
+}
+
+/* 썸네일 이미지 크기 고정 + 모서리 둥글게 */
+#wrap > ul > li.pic > img {
+    min-width: 270px;
+    max-width: 270px;
+    border-radius: 5px;
+}
+
+/* 오른쪽 글 영역 너비 + 사진과의 간격 */
+#wrap > ul > li.word {
+    width: 520px;
+    margin-left: 10px;
+}
+
+/* 카테고리 태그(첫 번째 span) 글자는 빨간색 + 굵게 */
+#wrap > ul > li.word div:nth-child(1) span.cate {
+    color: #f00;
+    font-weight: bold;
+}
+
+/* 기사 제목(두 번째 div) 글자는 크고 굵게 */
+#wrap > ul > li.word div:nth-child(2) {
+    font-size: 1.3em;
+    font-weight: bold;
+}
