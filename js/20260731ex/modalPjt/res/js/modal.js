@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('DOCUMENT READY!!');
 
     addEvents();
-    
+
 });
 
 const addEvents = () => {
@@ -18,10 +18,10 @@ const addEvents = () => {
     btn.addEventListener('click', function() {
         console.log('btn CLICKED!!');
 
-        // let modal = document.querySelector('#modal_bg');
+        let modal = document.querySelector('#modal_bg');
         // modal.style.display = 'block';
 
-        showHideEleForModal();
+        showHideEle(    );
 
     });
 
@@ -31,29 +31,21 @@ const addEvents = () => {
 
         // modal.style.display = 'none';
 
-        showHideEleForModal();
+        showHideEle();
 
     });
 
 }
 
-const showHideEleForModal = () => {
-    console.log('showHideEle() CLALLED!!');
+const showHideEle = (ele, status) => {
+    console.log('showHideEle() CALLED!!');
 
     let ele = document.querySelector('#modal_bg');
 
-
-    // if (ele.style.display === '' || ele.style.display === 'none') {
-    //     ele.style.display = 'block';
-    // } else {
-    //     ele.style.display = 'none';
-    // }
-
-    // falsy
-    if (!ele.style.display || ele.style.display === 'none') {
-        ele.style.display = 'block';
+    if (ele.style.display === '' || ele.style.display === 'none') {
+        ele.style.display = 'block' ;
     } else {
-        ele.style.display = 'none';
+        ele.style.display = 'none' ;
     }
-
+    
 }
